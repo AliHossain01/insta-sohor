@@ -61,13 +61,30 @@
         <div>
             <h1>Question Answer</h1>
             <h3>How does JS works?</h3>
-            <p>Ans:JavaScript is a single-threaded programming language, which means it has a single Call Stack</p>
+            <p>Ans: JavaScript is a synchronous single-threaded programming language. JavaScript can only execute one
+                command at a time in a specific order thats mean it's only go to the next line once the cuurent line has
+                been finished executed. Everything in JavaScript happens inside an Execution Context. The Execution
+                Context has two parts variable environment (memory) and thread of execution (code). JavaScript works in
+                chrome browser by using V8 engine. At first V8 engine takes JS source code. By parsing those source code
+                it creates a abstract syntax tree. V8's interpreter generates bytecode from the syntax tree. TurboFan
+                makes those byte code into an optimized machine code. Then finally run the optimized code. </p>
 
-            <h3>What does JS eventloop do?</h3>
-            <p>Ans: Event-Loop is</p>
+
 
             <h3>Local Storage vs Session Storage</h3>
-            <p>Ans: Local Storage is</p>
+            <p>Ans:1. Local Storage এ Data স্থায়ী ভাবে থাকে। Session Storage এ Data সাময়িক ভাবে থাকে। <br>
+                2. Local Storage এর storage capacity 5-10 MB । Session storage এর storage capacity 5 MB. <br>
+                3. Local Storage এর কোনো Data কে delete করতে হলে JS এর সাহায্যে অথবা manually করতে হয় । Session Storage
+                কাজ করে window এবং tab এর উপর ভিত্তি করে। অর্থাৎ window বা tab close করে দিলেই সেই ডাটা ডিলেট হয়ে যাবে ।
+                <br>
+                4. Local Storage এবং Session Storage এর কোনো SSL support নেই । <br>
+                5. Local Storage এবং Session Storage এর ডাটা প্রতিটি HTTP request এর জন্য transfer হয় না
+
+
+
+
+
+            </p>
         </div>
     </section>
     <footer></footer>
